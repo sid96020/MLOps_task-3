@@ -52,4 +52,4 @@ model.fit(x_train, y_train,
           verbose=1)
 score = model.evaluate(x_test, y_test, verbose=0)
 os.system("> accuracy.txt")
-print('Test accuracy:', score[1])
+print(int(score[1]*100))
