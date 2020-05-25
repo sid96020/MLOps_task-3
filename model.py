@@ -45,12 +45,11 @@ model.add(Dropout(0.5))
 model.add(Dense(num_classes, activation='softmax'))
 
 model.compile(loss=keras.losses.categorical_crossentropy,
-              optimizer=keras.optimizers.Adadelta(),
-              metrics=['accuracy'])
+              optimizer=keras.optimizers.Adadelta(),metrics=['accuracy'])
 
 model.fit(x_train, y_train,
           epochs=epochs,
           verbose=1)
 score = model.evaluate(x_test, y_test, verbose=0)
-os.syatem("> accuracy.txt")
+os.system("> accuracy.txt")
 print('Test accuracy:', score[1])
