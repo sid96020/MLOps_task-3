@@ -24,7 +24,7 @@ else:
     input_shape = (img_rows, img_cols, 1)
 
 x_train = x_train.astype('float32')
-x_test = x_test.astype('float32')
+x_test =x_test.astype('float32')
 x_train /= 255
 x_test /= 255
 # convert class vectors to binary class matrices
